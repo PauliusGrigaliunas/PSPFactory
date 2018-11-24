@@ -2,7 +2,7 @@
 
 namespace IRentABicycleApi
 {
-    public class ICarRentalAgreement
+    public class IBicycleRentalAgreement
     {
         public DateTime Date {get; set;}
         public DateTime Time { get; set; }

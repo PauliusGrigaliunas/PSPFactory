@@ -2,7 +2,7 @@
 
 namespace IRentABicycleApi
 {
-    public interface IRentACarFactory
+    public interface IRentABicycleFactory
     {
         void TakeACar();
         void MakeCarRentalAgreement();
