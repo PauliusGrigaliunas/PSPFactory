@@ -5,5 +5,4 @@ namespace RentABicycleRepositoryPack
     public class Class1
     {
     }
-
 }
