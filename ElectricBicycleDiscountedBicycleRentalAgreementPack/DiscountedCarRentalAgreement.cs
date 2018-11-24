@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using IRentACarApiPack;
 
-namespace SimpleCarRegularCarRentalAgreementPack
+namespace ElectricCarPack
 {
-    class RegularCarRentalAgreement: ICarRentalAgreement
+    class DiscountedCarRentalAgreement : ICarRentalAgreement
     {
     }
 }

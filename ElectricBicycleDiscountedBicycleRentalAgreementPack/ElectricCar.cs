@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using IRentACarApiPack;
 
-namespace SimpleCarRegularCarRentalAgreementPack
+namespace ElectricCarPack
 {
-    class RegularCarRentalAgreement: ICarRentalAgreement
+
+    public class ElectricCar : ICar
     {
+        public int RunningTime { get; set; }
     }
+
 }

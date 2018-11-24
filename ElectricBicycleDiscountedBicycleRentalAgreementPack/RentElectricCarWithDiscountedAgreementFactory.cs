@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using IRentACarApiPack;
 
-namespace SimpleCarRegularCarRentalAgreementPack
+namespace ElectricCarPack
 {
-    class IRentCarFactory : IRentACarFactory
+    class RentElectricCarWithDiscountedAgreementFactory : IRentACarFactory
     {
         public void MakeCarRentalAgreement()
         {
@@ -16,7 +16,5 @@ namespace SimpleCarRegularCarRentalAgreementPack
         {
             throw new NotImplementedException();
         }
-
-
     }
 }
