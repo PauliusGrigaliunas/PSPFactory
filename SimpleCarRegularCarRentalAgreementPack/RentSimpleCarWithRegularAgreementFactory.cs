@@ -5,7 +5,7 @@ using IRentACarApiPack;
 
 namespace SimpleCarRegularCarRentalAgreementPack
 {
-    class IRentCarFactory : IRentACarFactory
+    class RentSimpleCarWithRegularAgreementFactory : IRentACarFactory
     {
         public void MakeCarRentalAgreement()
         {
