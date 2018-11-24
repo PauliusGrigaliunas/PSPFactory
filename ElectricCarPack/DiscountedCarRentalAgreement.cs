@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ICarPack;
+using ICarRentalAgreementPack;
 
 namespace ElectricCarPack
 {
-
-    public class ElectricCar : ICar
+    class DiscountedCarRentalAgreement : ICarRentalAgreement
     {
-        public int RunningTime { get; set; }
     }
-
 }

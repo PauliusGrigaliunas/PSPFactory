@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ICarPack
+namespace ICarRentalAgreementPack
 {
     public class Class1
     {
