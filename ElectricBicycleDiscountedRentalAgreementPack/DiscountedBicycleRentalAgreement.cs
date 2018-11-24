@@ -5,7 +5,12 @@ using IRentABicycleApi;
 
 namespace ElectricBicycleDiscountedRentalAgreementPack
 {
-    class DiscountedBicycleRentalAgreement : IBi
+    class DiscountedBicycleRentalAgreement : IBicycleRentalAgreement
     {
+        public DiscountedBicycleRentalAgreement()
+        {
+            Id = Guid.NewGuid().ToString();
+        }
+
     }
 }
