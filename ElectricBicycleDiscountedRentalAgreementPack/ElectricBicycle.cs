@@ -12,7 +12,7 @@ namespace ClassLibrary1ElectricBicycleDiscountedBicycleRentalAgreementPack
         public ElectricBicycle(string name, string model, decimal timeTax, string engine,  int numberOfSeats)
         {
             Id = Guid.NewGuid().ToString();
-            name = Name;
+            Name = name;
             Model = model;
             TimeTax = timeTax;
             Engine = engine;
