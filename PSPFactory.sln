@@ -7,13 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSPFactory", "PSPFactory\PS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICarPack", "ICarPack\ICarPack.csproj", "{ACF72241-2A38-46F5-A235-AF30479A03F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectricCarPack", "ElectricCarPack\ElectricCarPack.csproj", "{6EA14E67-FF5E-437D-B41B-3475702A6D36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectricBicycleDiscountedBicycleRentalAgreementPack", "ElectricCarPack\ElectricBicycleDiscountedBicycleRentalAgreementPack.csproj", "{6EA14E67-FF5E-437D-B41B-3475702A6D36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCarRegularCarRentalAgreementPack", "SimpleCarRegularCarRentalAgreementPack\SimpleCarRegularCarRentalAgreementPack.csproj", "{0B36F035-16BD-4D36-8AE3-573F5ABF9D2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCarRegularCarRentalAgreementPack", "SimpleCarRegularCarRentalAgreementPack\SimpleCarRegularCarRentalAgreementPack.csproj", "{0B36F035-16BD-4D36-8AE3-573F5ABF9D2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRentACarFactoryPack", "IRentACarFactoryPack\IRentACarFactoryPack.csproj", "{D92F30B5-3564-4F74-99A2-3E417113D1D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRentACarFactoryPack", "IRentACarFactoryPack\IRentACarFactoryPack.csproj", "{D92F30B5-3564-4F74-99A2-3E417113D1D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICarRentalAgreementPack", "ICarRentalAgreementPack\ICarRentalAgreementPack.csproj", "{75A9759C-3D37-4E7A-AF0A-E59A76A047E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICarRentalAgreementPack", "ICarRentalAgreementPack\ICarRentalAgreementPack.csproj", "{75A9759C-3D37-4E7A-AF0A-E59A76A047E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Car", "Car", "{1F1FAED7-0024-4A4E-8261-7B1A4861B0C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bicycle", "Bicycle", "{77CEFD57-A634-4D26-91AF-1DB9EE0A60D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{FB0BCBE1-6048-4C55-AFBD-8B486DC48D0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +54,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACF72241-2A38-46F5-A235-AF30479A03F2} = {1F1FAED7-0024-4A4E-8261-7B1A4861B0C6}
+		{6EA14E67-FF5E-437D-B41B-3475702A6D36} = {1F1FAED7-0024-4A4E-8261-7B1A4861B0C6}
+		{0B36F035-16BD-4D36-8AE3-573F5ABF9D2E} = {1F1FAED7-0024-4A4E-8261-7B1A4861B0C6}
+		{D92F30B5-3564-4F74-99A2-3E417113D1D1} = {1F1FAED7-0024-4A4E-8261-7B1A4861B0C6}
+		{75A9759C-3D37-4E7A-AF0A-E59A76A047E8} = {1F1FAED7-0024-4A4E-8261-7B1A4861B0C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92846D07-22B1-4BD4-8C2C-2336678E8DB4}
