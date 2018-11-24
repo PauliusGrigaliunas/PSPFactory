@@ -2,29 +2,39 @@
 using RepositionAPIPack;
 using IRentABicycleApi;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace RentABicycleRepositoryPack
 {
     public class BicycleRepository : IRepositor<IBicycle>
     {
+
+        private List<IBicycle> _items = new List<IBicycle>();
         public void Add(IBicycle item)
         {
-            throw new NotImplementedException();
+            if (!_items.Any(x => x.Id == item.Id))
+            {
+                _items.Add(item);
+            }
+            else
+            {
+                throw new Exception("This accountant record already exists.");
+            }
         }
 
         public void Delete(string itemId)
         {
-            throw new NotImplementedException();
+            _items.RemoveAll(x => x.Id == itemId);
         }
 
         public List<IBicycle> GetAll()
         {
-            throw new NotImplementedException();
+            return _items;
         }
 
         public IBicycle GetById(string itemId)
         {
-            throw new NotImplementedException();
+            return _items.FirstOrDefault(x => x.Id == itemId);
         }
     }
 }
