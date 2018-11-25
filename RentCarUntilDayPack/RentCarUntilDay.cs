@@ -2,7 +2,7 @@
 
 namespace RentCarUntilDayPack
 {
-    public class Class1
+    public class RentCarUntilDay
     {
     }
 }

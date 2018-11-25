@@ -2,7 +2,7 @@
 
 namespace IRentACarApiPack
 {
-    public class ICar
+    public abstract class ICar
     {
         public string Id { get; protected set; }
         public string Name { get; set; }

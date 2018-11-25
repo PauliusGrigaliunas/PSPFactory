@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RentSimpleCarUntilMonthPack
+namespace RentCarUntilMonthPack
 {
     public class RentCarUntilMonth
     {

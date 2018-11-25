@@ -2,7 +2,7 @@
 
 namespace RentBicycleUntilDayPack
 {
-    public class Class1
+    public class RentBicycleUntilDay
     {
     }
 }

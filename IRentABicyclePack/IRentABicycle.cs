@@ -2,7 +2,7 @@
 
 namespace IRentABicyclePack
 {
-    public class Class1
+    public interface IRentABicycle
     {
     }
 }

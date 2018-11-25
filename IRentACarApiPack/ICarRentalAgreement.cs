@@ -2,7 +2,7 @@
 
 namespace IRentACarApiPack
 {
-    public class ICarRentalAgreement
+    public abstract class ICarRentalAgreement
     {
         public string Id { get; protected set; }
         public DateTime DateNow { get; set; }
