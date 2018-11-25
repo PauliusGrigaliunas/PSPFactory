@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ICarRentServiceAPIPack
 {
-    interface ICarRentalAgreementService
+    public interface ICarRentalAgreementService
     {
-        int MakeADeal();
+        void SignUpAgreement();
     }
 }

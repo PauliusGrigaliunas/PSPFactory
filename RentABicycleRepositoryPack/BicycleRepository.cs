@@ -26,7 +26,15 @@ namespace RentABicycleRepositoryPack
         {
             _items.RemoveAll(x => x.Id == itemId);
         }
-
+        public void Update(IBicycle item)
+        {
+            if (_items.Any(x => x.Id == item.Id))
+            {
+                Delete(item.Id);
+                _items.Add(item);
+            }
+            else _items.Add(item);
+        }
         public List<IBicycle> GetAll()
         {
             return _items;
@@ -37,14 +45,6 @@ namespace RentABicycleRepositoryPack
             return _items.FirstOrDefault(x => x.Id == itemId);
         }
 
-        public void Update(IBicycle item)
-        {
-            if (_items.Any(x => x.Id == item.Id))
-            {
-                Delete(item.Id);
-                _items.Add(item);
-            }
-            else _items.Add(item);
-        }
+
     }
 }

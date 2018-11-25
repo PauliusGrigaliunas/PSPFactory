@@ -4,14 +4,15 @@ using ICarRentServiceAPIPack;
 using IRentACarApiPack;
 using System.Collections.Generic;
 
-namespace SimpleCarServicePack
+namespace ElectricCarServicePack
 {
-    public class SimpleCarService : ICarService
+    public class ElectricCarService : ICarService
     {
+
         private ICar _car;
         private IRepositor<ICar> _repositor;
 
-        public SimpleCarService(ICar car, IRepositor<ICar> repositor)
+        public ElectricCarService(ICar car, IRepositor<ICar> repositor)
         {
             _car = car;
             _repositor = repositor;

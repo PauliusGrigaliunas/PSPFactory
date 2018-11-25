@@ -26,6 +26,15 @@ namespace RentABicycleRepositoryPack
         {
             _items.RemoveAll(x => x.Id == itemId);
         }
+        public void Update(IBicycleRentalAgreement item)
+        {
+            if (_items.Any(x => x.Id == item.Id))
+            {
+                Delete(item.Id);
+                _items.Add(item);
+            }
+            else _items.Add(item);
+        }
 
         public List<IBicycleRentalAgreement> GetAll()
         {
@@ -35,16 +44,6 @@ namespace RentABicycleRepositoryPack
         public IBicycleRentalAgreement GetById(string itemId)
         {
             return _items.FirstOrDefault(x => x.Id == itemId);
-        }
-
-        public void Update(IBicycleRentalAgreement item)
-        {
-            if (_items.Any(x => x.Id == item.Id))
-            {
-                Delete(item.Id);
-                _items.Add(item);
-            }
-            else _items.Add(item);
         }
     }
 }
