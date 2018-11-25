@@ -25,6 +25,15 @@ namespace RentACarRepositoryPack
         {
             _items.RemoveAll(x => x.Id == itemId);
         }
+        public void Update(ICarRentalAgreement item)
+        {
+            if (_items.Any(x => x.Id == item.Id))
+            {
+                Delete(item.Id);
+                _items.Add(item);
+            }
+            else _items.Add(item);
+        }
 
         public List<ICarRentalAgreement> GetAll()
         {

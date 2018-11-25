@@ -13,7 +13,7 @@ namespace RentACarRepositoryPack
         {
             if (!_items.Any(x => x.Id == item.Id))
             {
-                _items.Add(item);
+                
             }
             else
             {
@@ -26,6 +26,16 @@ namespace RentACarRepositoryPack
             _items.RemoveAll(x => x.Id == itemId);
         }
 
+        public void Update(ICar item)
+        {
+            if (_items.Any(x => x.Id == item.Id))
+            {
+                Delete(item.Id);
+                _items.Add(item);
+            }
+            else _items.Add(item);
+        }
+
         public List<ICar> GetAll()
         {
             return _items;
@@ -35,5 +45,7 @@ namespace RentACarRepositoryPack
         {
             return _items.FirstOrDefault(x => x.Id == itemId);
         }
+
+
     }
 }

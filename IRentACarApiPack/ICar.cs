@@ -10,5 +10,6 @@ namespace IRentACarApiPack
         public decimal TimeTax { get; set; }
         public string Engine { get; set; }
         public int NumberOfSeats { get; set; }
+        public int RecoveryTimes { get; set; }
     }
 }

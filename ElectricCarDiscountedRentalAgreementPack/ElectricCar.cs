@@ -18,6 +18,7 @@ namespace ElectricCarPack
             Engine = engine;
             RunningTime = runningTime;
             NumberOfSeats = numberOfSeats;
+            RecoveryTimes = 0;
         }
     }
 

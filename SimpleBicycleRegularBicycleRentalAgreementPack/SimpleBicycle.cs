@@ -15,6 +15,7 @@ namespace SimpleBicycleRegularBicycleRentalAgreementPack
             Model = model;
             TimeTax = timeTax;
             NumberOfSeats = numberOfSeats;
+            RecoveryTimes = 0;
         }
     }
 }

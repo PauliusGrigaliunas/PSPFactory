@@ -17,6 +17,7 @@ namespace ClassLibrary1ElectricBicycleDiscountedBicycleRentalAgreementPack
             TimeTax = timeTax;
             Engine = engine;
             NumberOfSeats = numberOfSeats;
+            RecoveryTimes = 0;
         }
     }
 }

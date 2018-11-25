@@ -9,5 +9,6 @@ namespace IRentABicycleApi
         public string Model { get; set; }
         public decimal TimeTax { get; set; }
         public int NumberOfSeats { get; set; }
+        public int RecoveryTimes { get; set; }
     }
 }

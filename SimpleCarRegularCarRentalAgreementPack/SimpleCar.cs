@@ -13,6 +13,7 @@ namespace SimpleCarRegularCarRentalAgreementPack
             TimeTax = timeTax;
             Engine = engine;
             NumberOfSeats = numberOfSeats;
+            RecoveryTimes = 0;
         }
     }
 }
