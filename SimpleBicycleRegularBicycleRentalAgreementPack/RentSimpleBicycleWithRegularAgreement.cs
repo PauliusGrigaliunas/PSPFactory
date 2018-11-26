@@ -5,7 +5,7 @@ using IRentABicycleApi;
 
 namespace SimpleBicycleRegularBicycleRentalAgreementPack
 {
-    class RentSimpleBicycleWithRegularAgreement : IRentABicycleFactory
+    public class RentSimpleBicycleWithRegularAgreement : IRentABicycleFactory
     {
         public IBicycleRentalAgreement MakeBicycleRentalAgreement()
         {

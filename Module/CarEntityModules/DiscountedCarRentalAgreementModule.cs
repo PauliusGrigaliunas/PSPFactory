@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ModulesPack
 {
-    class DiscountedCarRentalAgreementModule : Module
+    public class DiscountedCarRentalAgreementModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {

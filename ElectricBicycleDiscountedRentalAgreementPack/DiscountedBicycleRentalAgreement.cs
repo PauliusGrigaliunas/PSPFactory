@@ -5,7 +5,7 @@ using IRentABicycleApi;
 
 namespace ElectricBicycleDiscountedRentalAgreementPack
 {
-    class DiscountedBicycleRentalAgreement : IBicycleRentalAgreement
+    public class DiscountedBicycleRentalAgreement : IBicycleRentalAgreement
     {
         public DiscountedBicycleRentalAgreement(DateTime date, DateTime time, decimal distance, decimal discount)
         {

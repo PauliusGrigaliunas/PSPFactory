@@ -6,7 +6,7 @@ using RepositionAPIPack;
 
 namespace RentACarRepositoryPack
 {
-    class CarRentalAgreementsRepository : IRepositor<ICarRentalAgreement>
+    public class CarRentalAgreementsRepository : IRepositor<ICarRentalAgreement>
     {
         private List<ICarRentalAgreement> _items = new List<ICarRentalAgreement>();
         public void Add(ICarRentalAgreement item)

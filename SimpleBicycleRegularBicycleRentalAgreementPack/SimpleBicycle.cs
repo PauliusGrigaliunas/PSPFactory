@@ -5,7 +5,7 @@ using IRentABicycleApi;
 
 namespace SimpleBicycleRegularBicycleRentalAgreementPack
 {
-    class SimpleBicycle: IBicycle
+    public class SimpleBicycle : IBicycle
     {
 
         public SimpleBicycle(string name, string model, decimal timeTax, int numberOfSeats)

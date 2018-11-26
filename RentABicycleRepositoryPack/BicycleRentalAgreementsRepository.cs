@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace RentABicycleRepositoryPack
 {
-    class BicycleRentalAgreementsRepository : IRepositor <IBicycleRentalAgreement>
+    public class BicycleRentalAgreementsRepository : IRepositor <IBicycleRentalAgreement>
     {
         private List<IBicycleRentalAgreement> _items = new List<IBicycleRentalAgreement>();
         public void Add(IBicycleRentalAgreement item)

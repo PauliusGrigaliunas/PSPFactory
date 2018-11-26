@@ -5,7 +5,7 @@ using IRentABicycleApi;
 
 namespace ElectricBicycleDiscountedRentalAgreementPack
 {
-    class ElectricBicycle : IBicycle
+    public class ElectricBicycle : IBicycle
     {
         public string Engine { get; set; }
 
