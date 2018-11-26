@@ -14,9 +14,15 @@ namespace SimpleBicycleRegularBicycleRentalAgreementPack
             return new RegularBicycleRentalAgreement(dateTime.Date, dateTime.Date, 1m);
         }
 
-        public IBicycle TakeABicycle()
+        public IBicycleRentalAgreement MakeBicycleRentalAgreement(DateTime date, DateTime time, decimal distance)
         {
-            return new SimpleBicycle("a", "a", 0.1m, 5);
+            return new RegularBicycleRentalAgreement(date, time, distance);
+        }
+
+
+        public IBicycle TakeABicycle(string name, string model, decimal timeTax, int numberOfSeats)
+        {
+            return new SimpleBicycle(name, model, timeTax, numberOfSeats);
         }
     }
 }

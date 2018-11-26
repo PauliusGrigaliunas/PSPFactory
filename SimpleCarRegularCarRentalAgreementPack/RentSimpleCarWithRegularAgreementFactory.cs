@@ -14,38 +14,21 @@ namespace SimpleCarRegularCarRentalAgreementPack
         private string _engine;
         private int _numberOfSeats;
 
-        public RentSimpleCarWithRegularAgreementFactory(string name, string model, decimal timeTax, string engine, int numberOfSeats)
+        public RentSimpleCarWithRegularAgreementFactory()
         {
-            _name = name;
-            _model = model;
-            _timeTax = timeTax;
-            _engine = engine;
-            _numberOfSeats = numberOfSeats;
+
         }
 
-        public RentSimpleCarWithRegularAgreementFactory(ICar car)
-        {
-            _carId = car.Id;
-            _name = car.Name;
-            _model = car.Model;
-            _timeTax = car.TimeTax;
-            _engine = car.Engine;
-            _numberOfSeats = car.NumberOfSeats;
-        }
-
-
-        public ICarRentalAgreement MakeCarRentalAgreement()
+        public ICarRentalAgreement MakeCarRentalAgreement(DateTime date, DateTime time, Decimal distance)
         {
             DateTime dateTime = new DateTime();
-
-            return new RegularCarRentalAgreement(dateTime.Date, dateTime.Date, 1m);
+            return new RegularCarRentalAgreement(DateTime.Now, dateTime.Date, distance);
         }
 
-        public ICar TakeACar()
+
+        public ICar TakeACar(string name, string model, decimal timeTax, string engine, int numberOfSeats)
         {
-            return new SimpleCar(_name, _model, _timeTax, _engine, _numberOfSeats);
+            return new SimpleCar(name, model, timeTax, engine, numberOfSeats);
         }
-
-
     }
 }

@@ -15,37 +15,18 @@ namespace ElectricCarPack
         private int _runningTime; 
         private int _numberOfSeats;
 
-        public RentElectricCarWithDiscountedAgreementFactory(string name, string model, decimal timeTax, string engine, int runningTime, int numberOfSeats)
+        public RentElectricCarWithDiscountedAgreementFactory()
+        {}
+
+        public ICarRentalAgreement MakeCarRentalAgreement(DateTime date, DateTime time, Decimal distance)
         {
-            _name = name;
-            _model = model;
-            _timeTax = timeTax;
-            _engine = engine;
-            _runningTime = runningTime;
-            _numberOfSeats = numberOfSeats;
+
+            return new DiscountedCarRentalAgreement(date, time, distance, 0.1m);
         }
 
-        public RentElectricCarWithDiscountedAgreementFactory(ElectricCar car)
+        public ICar TakeACar(string name, string model, decimal timeTax, string engine, int numberOfSeats)
         {
-            _carId = car.Id;
-            _name = car.Name;
-            _model = car.Model;
-            _timeTax = car.TimeTax;
-            _engine = car.Engine;
-            _runningTime = car.RunningTime;
-            _numberOfSeats = car.NumberOfSeats;
-        }
-
-        public ICarRentalAgreement MakeCarRentalAgreement()
-        {
-            DateTime dateTime = new DateTime();
-
-            return new DiscountedCarRentalAgreement(dateTime.Date, dateTime.Date, 1m, 0.1m);
-        }
-
-        public ElectricCar TakeACar(string name, string model, decimal timeTax, string engine, int runningTime, int numberOfSeats)
-        {
-            return new ElectricCar(name, model, timeTax, engine, runningTime, numberOfSeats);
+            return new ElectricCar(name, model, timeTax, engine, 24, numberOfSeats);
         }
 
     }

@@ -5,18 +5,17 @@ using IRentABicycleApi;
 
 namespace ElectricBicycleDiscountedRentalAgreementPack
 {
-    class RentElectricBicycleWithDiscountedAgreement : IBicycleRentalAgreement
+    class RentElectricBicycleWithDiscountedAgreement : IRentABicycleFactory
     {
-        public IBicycleRentalAgreement MakeBicycleRentalAgreement()
+        public IBicycleRentalAgreement MakeBicycleRentalAgreement(DateTime date, DateTime time, decimal distance)
         {
-            DateTime dateTime = new DateTime();
-
-            return new DiscountedBicycleRentalAgreement(dateTime.Date, dateTime.Date, 1m, 0.1m);
+            return new DiscountedBicycleRentalAgreement(date, time, distance, 0.1m);
         }
 
-        public IBicycle TakeABicycle()
+
+        public IBicycle TakeABicycle(string name, string model, decimal timeTax, int numberOfSeats)
         {
-            return new ElectricBicycle("a", "a", 0.1m, "b", 5);
+            return new ElectricBicycle(name, model, timeTax, "Electro" , numberOfSeats);
         }
     }
 }
