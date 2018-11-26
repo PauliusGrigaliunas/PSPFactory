@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ICarRentServiceAPIPack\ICarRentServiceAPIPack.csproj" />
     <ProjectReference Include="..\IRentACarFasadePack\IRentACarFasadePack.csproj" />
+    <ProjectReference Include="..\SimpleCarServicePack\SimpleCarServicePack.csproj" />
   </ItemGroup>
 
 </Project>

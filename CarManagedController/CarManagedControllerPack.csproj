@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarManagedControlerAPIPack\CarManagedControllerAPIPack.csproj" />
+    <ProjectReference Include="..\IRentACarApiPack\IRentACarApiPack.csproj" />
+    <ProjectReference Include="..\IRentACarFasadePack\IRentACarFasadePack.csproj" />
+    <ProjectReference Include="..\RentACarRepositoryPack\RentACarRepositoryPack.csproj" />
+  </ItemGroup>
+
+</Project>

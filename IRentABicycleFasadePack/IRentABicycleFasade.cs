@@ -2,7 +2,7 @@
 
 namespace IRentABicycleFasadePack
 {
-    public class IRentABicycleFasade
+    public interface IRentABicycleFasade
     {
     }
 }
