@@ -8,12 +8,10 @@ namespace ICarRentServiceAPIPack
     {
         void TakeACar();
         ICar GetCar(string id);
-
         int GetRecoveryTimes(string id);
         void AddACar(ICar car);
         void DeleteCar(string id);
         void UpdateCar(ICar car);
-
         List<ICar> AllCars();
     }
 }

@@ -11,7 +11,7 @@ namespace ModulesPack.BicycleEntityModules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<Disc>().As<IBicycleRentalAgreement>();
+            builder.RegisterType<DiscountedBicycleRentalAgreement>().As<IBicycleRentalAgreement>();
             base.Load(builder);
         }
     }

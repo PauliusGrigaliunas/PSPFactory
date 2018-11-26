@@ -6,7 +6,6 @@ namespace IBicycleRentServiceAPIPack
 {
     public interface IBicycleRentalAgreementService
     {
-        void MakeADeal();
-
+        void SignUpAgreement()
     }
 }

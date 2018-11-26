@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using ModulesPack.BicycleEntityModules;
 
 namespace ModulesPack
 {
@@ -10,10 +11,10 @@ namespace ModulesPack
         {
             var builder = new ContainerBuilder();
 
-            builder.RegisterModule<SimpleCarModule>();
-            builder.RegisterModule<ElectricCarModule>();
+            builder.RegisterModule<RentABicycleFactoryModule>();
+            builder.RegisterModule<RentACarFactoryModule>();
 
-
+            builder.RegisterModule<RepositorModule>();
 
             return builder.Build();
         }

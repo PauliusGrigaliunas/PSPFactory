@@ -5,13 +5,13 @@ using Autofac;
 using IRentABicycleApi;
 using SimpleBicycleRegularBicycleRentalAgreementPack;
 
-namespace ModulesPack.BicycleEntityModules
+namespace ModulesPack
 {
-    public class SimpleBicycleModule : Module
+    public class RentACarFactoryModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<SimpleBicycle>().As<IBicycle>();
+            builder.RegisterType<RentSimpleBicycleWithRegularAgreement>().As<IRentABicycleFactory>();
             base.Load(builder);
         }
     }

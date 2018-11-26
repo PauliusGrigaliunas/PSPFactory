@@ -4,6 +4,6 @@ namespace IBicycleRentServiceAPIPack
 {
     public interface IBicycleService
     {
-        void MakeADeal();
+        void TakeABicycle();
     }
 }
