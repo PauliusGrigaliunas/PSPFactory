@@ -5,16 +5,45 @@ using IRentACarApiPack;
 
 namespace SimpleCarRegularCarRentalAgreementPack
 {
-    class RentSimpleCarWithRegularAgreementFactory : IRentACarFactory
+    public class RentSimpleCarWithRegularAgreementFactory : IRentACarFactory
     {
-        public void MakeCarRentalAgreement()
+        private string _carId;
+        private string _name;
+        private string _model;
+        private decimal _timeTax;
+        private string _engine;
+        private int _numberOfSeats;
+
+        public RentSimpleCarWithRegularAgreementFactory(string name, string model, decimal timeTax, string engine, int numberOfSeats)
         {
-            throw new NotImplementedException();
+            _name = name;
+            _model = model;
+            _timeTax = timeTax;
+            _engine = engine;
+            _numberOfSeats = numberOfSeats;
         }
 
-        public void TakeACar()
+        public RentSimpleCarWithRegularAgreementFactory(ICar car)
         {
-            throw new NotImplementedException();
+            _carId = car.Id;
+            _name = car.Name;
+            _model = car.Model;
+            _timeTax = car.TimeTax;
+            _engine = car.Engine;
+            _numberOfSeats = car.NumberOfSeats;
+        }
+
+
+        public ICarRentalAgreement MakeCarRentalAgreement()
+        {
+            DateTime dateTime = new DateTime();
+
+            return new RegularCarRentalAgreement(dateTime.Date, dateTime.Date, 1m);
+        }
+
+        public ICar TakeACar()
+        {
+            return new SimpleCar(_name, _model, _timeTax, _engine, _numberOfSeats);
         }
 
 

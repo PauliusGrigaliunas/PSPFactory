@@ -4,8 +4,8 @@ namespace IRentACarApiPack
 {
     public interface IRentACarFactory
     {
-        void TakeACar();
-        void MakeCarRentalAgreement();
+        ICar TakeACar();
+        ICarRentalAgreement MakeCarRentalAgreement();
 
     }
 }

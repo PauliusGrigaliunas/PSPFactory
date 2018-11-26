@@ -1,4 +1,5 @@
 ﻿using System;
+using Bootstrap;
 using CarManagedControllerAPIPack;
 using IRentACarApiPack;
 using IRentACarFasadePack;
@@ -9,7 +10,7 @@ namespace CarManagedControllerPack
     {
 
         private ICar _car;
-        private IEmployeeFacade _employeeFacade;
+/*        private IEmployeeFacade _employeeFacade;
 
         public CarManagedController()
         {
@@ -26,6 +27,11 @@ namespace CarManagedControllerPack
         {
 
             return new SimpleCar( name,  model, timeTax, engine, numberOfSeats);
+        }*/
+
+        void LoadView()
+        {
+
         }
     }
 

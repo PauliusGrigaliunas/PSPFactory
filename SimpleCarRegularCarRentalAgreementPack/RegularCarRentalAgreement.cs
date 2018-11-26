@@ -5,9 +5,9 @@ using IRentACarApiPack;
 
 namespace SimpleCarRegularCarRentalAgreementPack
 {
-    class RegularCarRentalAgreement: ICarRentalAgreement
+    public class RegularCarRentalAgreement: ICarRentalAgreement
     {
-        public RegularCarRentalAgreement(DateTime date, DateTime time, decimal distance, decimal discount)
+        public RegularCarRentalAgreement(DateTime date, DateTime time, decimal distance)
         {
             Id = Guid.NewGuid().ToString();
             DateNow = DateTime.Now;

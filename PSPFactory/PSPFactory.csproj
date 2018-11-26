@@ -77,5 +77,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ICarManagerFasadePack\ICarManagerFasadePack.csproj">
+      <Project>{6f156bdc-2606-4ca5-9a4e-572dbe361ede}</Project>
+      <Name>ICarManagerFasadePack</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

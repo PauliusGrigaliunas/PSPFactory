@@ -5,7 +5,7 @@ using IRentACarApiPack;
 
 namespace ElectricCarPack
 {
-    class DiscountedCarRentalAgreement : ICarRentalAgreement
+    public class DiscountedCarRentalAgreement : ICarRentalAgreement
     {
         public DiscountedCarRentalAgreement(DateTime date, DateTime time, decimal distance, decimal discount)
         {

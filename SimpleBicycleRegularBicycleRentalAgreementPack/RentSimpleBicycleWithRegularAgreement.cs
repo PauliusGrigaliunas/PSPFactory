@@ -7,14 +7,16 @@ namespace SimpleBicycleRegularBicycleRentalAgreementPack
 {
     class RentSimpleBicycleWithRegularAgreement : IRentABicycleFactory
     {
-        public void MakeCarRentalAgreement()
+        public IBicycleRentalAgreement MakeBicycleRentalAgreement()
         {
-            throw new NotImplementedException();
+            DateTime dateTime = new DateTime();
+
+            return new RegularBicycleRentalAgreement(dateTime.Date, dateTime.Date, 1m);
         }
 
-        public void TakeACar()
+        public IBicycle TakeABicycle()
         {
-            throw new NotImplementedException();
+            return new SimpleBicycle("a", "a", 0.1m, 5);
         }
     }
 }

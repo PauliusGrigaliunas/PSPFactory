@@ -23,12 +23,7 @@ namespace SimpleCarServicePack
             _repositor.Update(_car);
         }
 
-        public List<ICar> GetAllOrders()
-        {
-            return _repositor.GetAll();
-        }
-
-        public ICar GetOrder(string id)
+        public ICar GetCar(string id)
         {
             return _repositor.GetById(id);
         }
@@ -37,5 +32,25 @@ namespace SimpleCarServicePack
         {
             return _repositor.GetById(id).RecoveryTimes;
         }
+
+        public void AddACar(ICar car)
+        {
+            _repositor.Add(car);
+        }
+
+        public void DeleteCar(string id)
+        {
+            _repositor.Delete(id);
+        }
+        public void UpdateCar(ICar car)
+        {
+            _repositor.Update(car);
+        }
+
+        public List<ICar> AllCars()
+        {
+            return _repositor.GetAll();
+        }
     }
+
 }

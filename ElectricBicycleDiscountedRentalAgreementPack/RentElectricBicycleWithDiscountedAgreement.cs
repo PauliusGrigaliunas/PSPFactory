@@ -7,14 +7,16 @@ namespace ElectricBicycleDiscountedRentalAgreementPack
 {
     class RentElectricBicycleWithDiscountedAgreement : IBicycleRentalAgreement
     {
-        public void MakeCarRentalAgreement()
+        public IBicycleRentalAgreement MakeBicycleRentalAgreement()
         {
-            throw new NotImplementedException();
+            DateTime dateTime = new DateTime();
+
+            return new DiscountedBicycleRentalAgreement(dateTime.Date, dateTime.Date, 1m, 0.1m);
         }
 
-        public void TakeACar()
+        public IBicycle TakeABicycle()
         {
-            throw new NotImplementedException();
+            return new ElectricBicycle("a", "a", 0.1m, "b", 5);
         }
     }
 }
