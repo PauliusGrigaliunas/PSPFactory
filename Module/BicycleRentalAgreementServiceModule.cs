@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Text;
 using Autofac;
 using IBicycleRentServiceAPIPack;
-using SimpleBicycleServicePack;
+using RegularBicycleRentalAgreementServicePack;
 
 namespace ModulesPack
 {
-    public class BicycleServiceModule : Module
+    public class BicycleRentalAgreementServiceModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<SimpleBicycleService>().As<IBicycleService>();
+            builder.RegisterType<RegularBicycleRentalAgreementService>().As<IBicycleRentalAgreementService>();
             base.Load(builder);
         }
     }

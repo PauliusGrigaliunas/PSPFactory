@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using Autofac;
-using IBicycleRentServiceAPIPack;
-using SimpleBicycleServicePack;
+using CarManagerFasadePack;
+using ICarManagerFasadePack;
 
 namespace ModulesPack
 {
-    public class BicycleServiceModule : Module
+    public class CarManagerFasadeModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<SimpleBicycleService>().As<IBicycleService>();
+            builder.RegisterType<CarManagerFasade>().As<ICarManagerFasade>();
             base.Load(builder);
         }
     }

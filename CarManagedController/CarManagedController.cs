@@ -29,7 +29,7 @@ namespace CarManagedControllerPack
             return new SimpleCar( name,  model, timeTax, engine, numberOfSeats);
         }*/
 
-        void LoadView()
+        public void LoadView()
         {
 
         }
