@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BicycleManagedControllerAPIPack
+namespace CarManagedControllerAPIPack
 {
-    public interface IBicycleManagerView
+    public interface ICarManagerView
     {
     }
 }

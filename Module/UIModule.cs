@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Autofac;
+﻿using Autofac;
 using BicycleManagedControllerAPIPack;
 using BicycleManagedControllerPack;
 using CarManagedControllerAPIPack;
@@ -11,7 +8,7 @@ using RentACarControlerPack;
 
 namespace ModulesPack
 {
-    class UIModule: Module
+    public class UIModule: Module
     {
         protected override void Load(ContainerBuilder builder)
         {
@@ -19,9 +16,9 @@ namespace ModulesPack
             builder.RegisterType<BicycleManagerController>().As<IBicycleManagedControler>();
             builder.RegisterType<RentACarControler>().As<IRentController>();
 
-            builder.RegisterType<SalesmanView>().As<ISalesmanView>();
-            builder.RegisterType<ManagerView>().As<IManagerView>();
-            builder.RegisterType<AccountantView>().As<IAccountantView>();
+            builder.RegisterType<CarManagedView>().As<ICarManagerView>();
+            builder.RegisterType<BicycleManagerView>().As<IBicycleManagerView>();
+            builder.RegisterType<RentACarView>().As<IRentView>();
             base.Load(builder);
         }
     }

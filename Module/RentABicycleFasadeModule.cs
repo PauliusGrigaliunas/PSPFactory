@@ -7,7 +7,7 @@ using RentBicycleUntilDayFasadePack;
 
 namespace ModulesPack
 {
-    class RentABicycleFasadeModule : Module
+    public class RentABicycleFasadeModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
