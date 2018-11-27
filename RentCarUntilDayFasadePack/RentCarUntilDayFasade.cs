@@ -1,10 +1,11 @@
 ﻿using System;
 using IRentACarApiPack;
+using IRentACarFasadePack;
 using SimpleCarServicePack;
 
 namespace RentCarUntilDayFasadePack
 {
-    public class RentCarUntilDayFasade
+    public class RentCarUntilDayFasade : IRentACarFasade
     {
 
         private SimpleCarService _simpleCar;

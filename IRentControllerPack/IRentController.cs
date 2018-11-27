@@ -4,5 +4,6 @@ namespace IRentControllerPack
 {
     public interface IRentController
     {
+        void LoadView();
     }
 }

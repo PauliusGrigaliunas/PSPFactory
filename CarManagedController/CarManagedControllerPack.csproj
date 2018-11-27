@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CarManagedControlerAPIPack\CarManagedControllerAPIPack.csproj" />
+    <ProjectReference Include="..\ICarManagerFasadePack\ICarManagerFasadePack.csproj" />
     <ProjectReference Include="..\IRentACarApiPack\IRentACarApiPack.csproj" />
     <ProjectReference Include="..\IRentACarFasadePack\IRentACarFasadePack.csproj" />
     <ProjectReference Include="..\RentACarRepositoryPack\RentACarRepositoryPack.csproj" />

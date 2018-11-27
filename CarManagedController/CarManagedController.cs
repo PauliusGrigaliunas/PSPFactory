@@ -1,33 +1,25 @@
 ﻿using System;
-using Bootstrap;
-using CarManagedControllerAPIPack;
+using CarManagerControllerAPIPack;
+using ICarManagerFasadePack;
 using IRentACarApiPack;
 using IRentACarFasadePack;
 
 namespace CarManagedControllerPack
 {
-    public class CarManagedController 
+    public class CarManagerController : ICarManagerController
     {
 
         private ICar _car;
-/*        private IEmployeeFacade _employeeFacade;
+        private ICarManagerFasade _carManagerFasade;
+        private ICarManagerView _view;
 
-        public CarManagedController()
+        public CarManagerController(ICarManagerFasade reportFacade, ICarManagerView view)
         {
-
+            _carManagerFasade = reportFacade;
+            _view = view;
+            _view.AddController(this);
         }
 
-        public void CreateElectricCar(string name, string model, decimal timeTax, string engine, int runningTime, int numberOfSeats)
-        {
-            IAccountant accountant = _employeeFacade.CreateAccountant(firstName, lastName);
-            return new ElectricCar(name, model, timeTax, engine, runningTime, numberOfSeats);
-        }
-
-        public ICar CreateSimpleCar(string name, string model, decimal timeTax, string engine, int numberOfSeats)
-        {
-
-            return new SimpleCar( name,  model, timeTax, engine, numberOfSeats);
-        }*/
 
         public void LoadView()
         {

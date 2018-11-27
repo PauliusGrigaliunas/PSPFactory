@@ -6,5 +6,6 @@ namespace BicycleManagedControllerAPIPack
 {
     public interface IBicycleManagerView
     {
+       void LoadView();
     }
 }

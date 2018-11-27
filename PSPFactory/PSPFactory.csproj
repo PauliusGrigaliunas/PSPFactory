@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.5.8.11\lib\net46\CommonServiceLocator.dll</HintPath>
     </Reference>
@@ -78,9 +81,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BicycleManagedControllerAPIPack\BicycleManagedControllerAPIPack.csproj">
+      <Project>{d77478bb-858f-4569-a6e4-6e54bab850b3}</Project>
+      <Name>BicycleManagedControllerAPIPack</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarManagedControlerAPIPack\CarManagedControllerAPIPack.csproj">
+      <Project>{f5e342a7-f7df-4ea5-bbb7-69b5f9bbf158}</Project>
+      <Name>CarManagedControllerAPIPack</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ICarManagerFasadePack\ICarManagerFasadePack.csproj">
       <Project>{6f156bdc-2606-4ca5-9a4e-572dbe361ede}</Project>
       <Name>ICarManagerFasadePack</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IRentControllerPack\IRentControllerPack.csproj">
+      <Project>{b5143aeb-f39c-4f4f-8664-482de874ef3c}</Project>
+      <Name>IRentControllerPack</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Module\ModulesPack.csproj">
+      <Project>{5664414a-cf53-4bc6-b3c9-0df625c5dbc6}</Project>
+      <Name>ModulesPack</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

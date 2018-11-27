@@ -16,9 +16,9 @@ namespace CarManagerFasadePack
             _repositor = repositor;
         }
 
-        public ICar CreateCar(string firstName, string lastName)
+        public ICar CreateCar(string name, string model, int timeTax, string engine, int numberOfSeats)
         {
-            ICar car = _rentACarFactory.TakeACar();
+            ICar car = _rentACarFactory.TakeACar(name, model, timeTax, engine, numberOfSeats);
             _repositor.Add(car);
             return car;
         }

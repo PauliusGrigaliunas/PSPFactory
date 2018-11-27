@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ICarManagerFasadePack;
-using Unity;
+using Autofac;
+using ModulesPack;
+using CarManagerControllerAPIPack;
+using BicycleManagedControllerAPIPack;
+using IRentControllerPack;
 
 namespace PSPFactory
 {
@@ -13,32 +17,37 @@ namespace PSPFactory
 
         static void Main(string[] args)
         {
-            ICarManagerFasade carManagerFasade;
-            carManagerFasade = new CarManagerFasade();
-
-
-            bool show = true;
-            while (show)
+            using (var scope = Bootstrapper.Build().BeginLifetimeScope())
             {
-                Console.WriteLine("1. Manager\n2. Accountant\n3. Salesman\n");
-                string option = Console.ReadLine();
-                switch (option)
+                IRentController rentController = scope.Resolve<IRentController>();
+                ICarManagerController carManagedControler = scope.Resolve<ICarManagerController>();
+                IBicycleManagedControler bicycleManagedControler = scope.Resolve<IBicycleManagedControler>();               
+
+                bool show = true;
+                while (show)
                 {
-                    case "1":
-                        managerController.LoadView();
-                        break;
-                    case "2":
-                        accountantController.LoadView();
-                        break;
-                    case "3":
-                        salesmanController.LoadView();
-                        break;
-                    case "exit":
-                        show = false;
-                        break;
-                    default:
-                        Console.WriteLine("Wrong option");
-                        break;
+                    Console.WriteLine("1. User");
+                    Console.WriteLine("2. CarManager");
+                    Console.WriteLine("3. BicycleManager");
+                    string option = Console.ReadLine();
+                    switch (option)
+                    {
+                        case "1":
+                            rentController.LoadView();
+                            break;
+                        case "2":
+                            carManagedControler.LoadView();
+                            break;
+                        case "3":
+                            bicycleManagedControler.LoadView();
+                            break;
+                        case "exit":
+                            show = false;
+                            break;
+                        default:
+                            Console.WriteLine("Wrong option");
+                            break;
+                    }
                 }
             }
 

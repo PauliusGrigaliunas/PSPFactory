@@ -5,5 +5,9 @@ namespace BicycleManagedControllerPack
 {
     public class BicycleManagerController : IBicycleManagedControler
     {
+        public void LoadView()
+        {
+
+        }
     }
 }

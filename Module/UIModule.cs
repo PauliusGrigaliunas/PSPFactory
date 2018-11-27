@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using BicycleManagedControllerAPIPack;
 using BicycleManagedControllerPack;
-using CarManagedControllerAPIPack;
+using CarManagerControllerAPIPack;
 using CarManagedControllerPack;
 using IRentControllerPack;
 using RentACarControlerPack;
@@ -12,7 +12,7 @@ namespace ModulesPack
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<CarManagedController>().As<ICarManagedControler>();
+            builder.RegisterType<CarManagerController>().As<ICarManagerController>();
             builder.RegisterType<BicycleManagerController>().As<IBicycleManagedControler>();
             builder.RegisterType<RentACarControler>().As<IRentController>();
 

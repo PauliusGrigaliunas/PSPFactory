@@ -7,5 +7,9 @@ namespace BicycleManagedControllerPack
 {
     public class BicycleManagerView : IBicycleManagerView
     {
+        public void LoadView()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

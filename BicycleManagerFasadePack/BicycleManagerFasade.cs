@@ -1,8 +1,9 @@
-﻿using System;
+﻿using IBicycleManagerFasadePack;
+using System;
 
 namespace BicycleManagerFasadePack
 {
-    public class BicycleManagerFasade
+    public class BicycleManagerFasade : IBicycleManagerFasade
     {
     }
 }

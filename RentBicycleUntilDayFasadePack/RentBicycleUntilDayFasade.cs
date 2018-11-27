@@ -1,8 +1,9 @@
-﻿using System;
+﻿using IRentABicycleFasadePack;
+using System;
 
 namespace RentBicycleUntilDayFasadePack
 {
-    public class RentBicycleUntilDayFasade
+    public class RentBicycleUntilDayFasade : IRentABicycleFasade
     {
     }
 }

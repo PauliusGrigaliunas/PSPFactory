@@ -31,7 +31,6 @@
     <ProjectReference Include="..\IRentACarApiPack\IRentACarApiPack.csproj" />
     <ProjectReference Include="..\IRentACarFasadePack\IRentACarFasadePack.csproj" />
     <ProjectReference Include="..\IRentControllerPack\IRentControllerPack.csproj" />
-    <ProjectReference Include="..\PSPFactory\PSPFactory.csproj" />
     <ProjectReference Include="..\RegularBicycleRentalAgreementServicePack\RegularBicycleRentalAgreementServicePack.csproj" />
     <ProjectReference Include="..\RegularCarRentalAgreementServicePack\RegularCarRentalAgreementServicePack.csproj" />
     <ProjectReference Include="..\RentABicycleControlerPack\RentABicycleControlerPack.csproj" />
