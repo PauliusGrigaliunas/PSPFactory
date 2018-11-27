@@ -8,20 +8,17 @@ namespace ElectricCarServicePack
 {
     public class ElectricCarService : ICarService
     {
-
-        private ICar _car;
         private IRepositor<ICar> _repositor;
 
-        public ElectricCarService(ICar car, IRepositor<ICar> repositor)
+        public ElectricCarService( IRepositor<ICar> repositor)
         {
-            _car = car;
             _repositor = repositor;
         }
 
-        public void TakeACar()
+        public void TakeACar(ICar car)
         {
-            _car.RecoveryTimes += 1;
-            _repositor.Update(_car);
+            car.RecoveryTimes += 1;
+            _repositor.Update(car);
         }
 
         public ICar GetCar(string id)

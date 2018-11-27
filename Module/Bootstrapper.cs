@@ -11,6 +11,11 @@ namespace ModulesPack
         {
             var builder = new ContainerBuilder();
 
+            builder.RegisterModule<RegularCarRentalAgreementModule>();
+            builder.RegisterModule<SimpleCarModule>();
+            builder.RegisterModule<RegularBicycleRentalAgreementModule>();
+            builder.RegisterModule<SimpleBicycleModule>();
+
             builder.RegisterModule<RentABicycleFactoryModule>();
             builder.RegisterModule<RentACarFactoryModule>();
 

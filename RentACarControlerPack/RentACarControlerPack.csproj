@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IRentACarFasadePack\IRentACarFasadePack.csproj" />
     <ProjectReference Include="..\IRentControllerPack\IRentControllerPack.csproj" />
   </ItemGroup>
 

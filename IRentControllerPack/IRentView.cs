@@ -6,5 +6,7 @@ namespace IRentControllerPack
 {
     public interface IRentView
     {
+        void AddController(IRentController controller);
+        void ShowMenu();
     }
 }

@@ -3,15 +3,11 @@ using System.Collections.Generic;
 using CarManagerControllerAPIPack;
 using ICarManagerFasadePack;
 using IRentACarApiPack;
-using IRentACarFasadePack;
-using RepositionAPIPack;
 
 namespace CarManagedControllerPack
 {
     public class CarManagerController : ICarManagerController
     {
-
-        private ICar _car;
         private ICarManagerFasade _carManagerFasade;
         private ICarManagerView _view;
 

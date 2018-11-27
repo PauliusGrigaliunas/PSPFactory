@@ -16,9 +16,15 @@ namespace DiscountedCarRentalAgreementServicePack
             _carRentalAgreement = carRentalAgreement;
             _repositor = repositor;
         }
-        public void SignUpAgreement()
+
+        public List<ICarRentalAgreement> AllAgreements()
         {
-            _repositor.Add(_carRentalAgreement);
+            return _repositor.GetAll();
+        }
+
+        public DateTime SignUpAgreement(ICarRentalAgreement _carRentalAgreement)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -8,17 +8,22 @@ namespace RegularCarRentalAgreementServicePack
 {
     public class RegularCarRentalAgreementService : ICarRentalAgreementService
     {
-        private ICarRentalAgreement _carRentalAgreement;
         private IRepositor<ICarRentalAgreement> _repositor;
 
-        public RegularCarRentalAgreementService(ICarRentalAgreement carRentalAgreement, IRepositor<ICarRentalAgreement> repositor)
+        public RegularCarRentalAgreementService(IRepositor<ICarRentalAgreement> repositor)
         {
-            _carRentalAgreement = carRentalAgreement;
             _repositor = repositor;
         }
-        public void SignUpAgreement()
+
+        public List<ICarRentalAgreement> AllAgreements()
+        {
+            return _repositor.GetAll();
+        }
+
+        public DateTime SignUpAgreement(ICarRentalAgreement _carRentalAgreement)
         {
             _repositor.Add(_carRentalAgreement);
+            return _carRentalAgreement.DateNow;
         }
     }
 }

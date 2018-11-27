@@ -6,7 +6,7 @@ namespace ICarRentServiceAPIPack
 {
     public interface ICarService
     {
-        void TakeACar();
+        void TakeACar(ICar car);
         ICar GetCar(string id);
         int GetRecoveryTimes(string id);
         void AddACar(ICar car);

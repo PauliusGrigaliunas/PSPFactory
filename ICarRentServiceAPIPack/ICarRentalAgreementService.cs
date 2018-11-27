@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IRentACarApiPack;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +7,7 @@ namespace ICarRentServiceAPIPack
 {
     public interface ICarRentalAgreementService
     {
-        void SignUpAgreement();
+        DateTime SignUpAgreement(ICarRentalAgreement _carRentalAgreement);
+        List<ICarRentalAgreement> AllAgreements();
     }
 }

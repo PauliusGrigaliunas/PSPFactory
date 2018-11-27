@@ -9,7 +9,7 @@
     <ProjectReference Include="..\ICarManagerFasadePack\ICarManagerFasadePack.csproj" />
     <ProjectReference Include="..\IRentACarApiPack\IRentACarApiPack.csproj" />
     <ProjectReference Include="..\IRentACarFasadePack\IRentACarFasadePack.csproj" />
-    <ProjectReference Include="..\RentACarRepositoryPack\RentACarRepositoryPack.csproj" />
+    <ProjectReference Include="..\RepositionAPIPack\RepositionAPIPack.csproj" />
   </ItemGroup>
 
 </Project>
