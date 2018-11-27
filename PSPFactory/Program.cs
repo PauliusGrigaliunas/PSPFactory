@@ -26,9 +26,12 @@ namespace PSPFactory
                 bool show = true;
                 while (show)
                 {
+                    Console.WriteLine("-----Meniu-----");
                     Console.WriteLine("1. User");
                     Console.WriteLine("2. CarManager");
                     Console.WriteLine("3. BicycleManager");
+                    Console.WriteLine("exit. Get out of the program");
+                    Console.WriteLine("----------");
                     string option = Console.ReadLine();
                     switch (option)
                     {

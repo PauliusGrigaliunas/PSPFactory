@@ -13,7 +13,7 @@ namespace RentACarRepositoryPack
         {
             if (!_items.Any(x => x.Id == item.Id))
             {
-                
+                _items.Add(item);
             }
             else
             {

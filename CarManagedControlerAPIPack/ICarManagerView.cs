@@ -7,6 +7,9 @@ namespace CarManagerControllerAPIPack
     public interface ICarManagerView
     {
         void AddController(ICarManagerController controller);
+        void ShowMenu();
+
+        void ShowCarDetails(string id, string name, string model);
     }
 }
 

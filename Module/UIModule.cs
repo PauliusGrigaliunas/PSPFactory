@@ -16,7 +16,7 @@ namespace ModulesPack
             builder.RegisterType<BicycleManagerController>().As<IBicycleManagedControler>();
             builder.RegisterType<RentACarControler>().As<IRentController>();
 
-            builder.RegisterType<CarManagedView>().As<ICarManagerView>();
+            builder.RegisterType<CarManagerView>().As<ICarManagerView>();
             builder.RegisterType<BicycleManagerView>().As<IBicycleManagerView>();
             builder.RegisterType<RentACarView>().As<IRentView>();
             base.Load(builder);
