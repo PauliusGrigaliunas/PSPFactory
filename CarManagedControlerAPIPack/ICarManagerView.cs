@@ -8,7 +8,6 @@ namespace CarManagerControllerAPIPack
     {
         void AddController(ICarManagerController controller);
         void ShowMenu();
-
         void ShowCarDetails(string id, string name, string model);
     }
 }

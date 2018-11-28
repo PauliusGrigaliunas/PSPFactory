@@ -20,7 +20,7 @@ namespace RentACarControlerPack
             _view.AddController(this);
         }
 
-        public List<ICar> AllCars()
+        public List<ICar> AllVehile()
         {
             return _rentACarFasade.GetCarRepositor;
         }
@@ -37,7 +37,7 @@ namespace RentACarControlerPack
            return _rentACarFasade.ReturnACar(id, time);
         }
 
-        public ICar TakeCar(string id)
+        public ICar TakeVehile(string id)
         {
             return _rentACarFasade.TakeACarById(id);
         }

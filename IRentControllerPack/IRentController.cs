@@ -8,9 +8,9 @@ namespace IRentControllerPack
     {
         void LoadView();
 
-        ICar TakeCar(string id);
+        ICar TakeVehile(string id);
         int AssignRentalAgreement();
         decimal MakeADeal(string id, int time);
-        List<ICar> AllCars();
+        List<ICar> AllVehile();
     }
 }

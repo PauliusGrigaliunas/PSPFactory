@@ -7,7 +7,7 @@ namespace RentABicycleControlerPack
 {
     public class RentABicycleControler : IRentController
     {
-        public List<ICar> AllCars()
+        public List<ICar> AllVehile()
         {
             throw new NotImplementedException();
         }
@@ -23,7 +23,7 @@ namespace RentABicycleControlerPack
             throw new NotImplementedException();
         }
 
-        public ICar TakeCar(string id)
+        public ICar TakeVehile(string id)
         {
             throw new NotImplementedException();
         }

@@ -58,7 +58,7 @@ namespace RentACarControlerPack
         {
             ShowAllCars();
             string carId = Console.ReadLine();
-            ICar car = _controller.TakeCar(carId);
+            ICar car = _controller.TakeVehile(carId);
             Console.WriteLine("You choose: ");
             ShowCarDetails(car.Id, car.Name, car.Model);
         }
@@ -82,7 +82,7 @@ namespace RentACarControlerPack
         private void ShowAllCars()
         {
             Console.WriteLine("Cars: ");
-            List<ICar> listOfCars = _controller.AllCars();
+            List<ICar> listOfCars = _controller.AllVehile();
             foreach (ICar car in listOfCars)
             {
                 ShowCarDetails(car.Id, car.Name, car.Model);
