@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Autofac;
+using ElectricCarServicePack;
 using ICarRentServiceAPIPack;
 using SimpleCarServicePack;
 
@@ -11,7 +12,7 @@ namespace ModulesPack
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<SimpleCarService>().As<ICarService>();
+            builder.RegisterType<ElectricCarService>().As<ICarService>();
             base.Load(builder);
         }
     }

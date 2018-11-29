@@ -17,6 +17,8 @@ namespace ElectricCarServicePack
 
         public void TakeACar(ICar car)
         {
+            string model = car.Model + " (electric)";
+            car.Model = model;
             car.RecoveryTimes += 1;
             _repositor.Update(car);
         }
@@ -33,6 +35,8 @@ namespace ElectricCarServicePack
 
         public void AddACar(ICar car)
         {
+           string model =  car.Model + " electric";
+            car.Model = model;          
             _repositor.Add(car);
         }
 
