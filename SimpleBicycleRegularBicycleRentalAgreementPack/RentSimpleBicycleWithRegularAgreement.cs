@@ -5,16 +5,24 @@ using IRentABicycleApi;
 
 namespace SimpleBicycleRegularBicycleRentalAgreementPack
 {
-    class RentSimpleBicycleWithRegularAgreement : IRentABicycleFactory
+    public class RentSimpleBicycleWithRegularAgreement : IRentABicycleFactory
     {
-        public void MakeCarRentalAgreement()
+        public IBicycleRentalAgreement MakeBicycleRentalAgreement()
         {
-            throw new NotImplementedException();
+            DateTime dateTime = new DateTime();
+
+            return new RegularBicycleRentalAgreement(dateTime.Date, dateTime.Date, 1m);
         }
 
-        public void TakeACar()
+        public IBicycleRentalAgreement MakeBicycleRentalAgreement(DateTime date, DateTime time, decimal distance)
         {
-            throw new NotImplementedException();
+            return new RegularBicycleRentalAgreement(date, time, distance);
+        }
+
+
+        public IBicycle TakeABicycle(string name, string model, decimal timeTax, int numberOfSeats)
+        {
+            return new SimpleBicycle(name, model, timeTax, numberOfSeats);
         }
     }
 }

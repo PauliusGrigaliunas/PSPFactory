@@ -5,16 +5,17 @@ using IRentABicycleApi;
 
 namespace ElectricBicycleDiscountedRentalAgreementPack
 {
-    class RentElectricBicycleWithDiscountedAgreement : IBicycleRentalAgreement
+    public class RentElectricBicycleWithDiscountedAgreement : IRentABicycleFactory
     {
-        public void MakeCarRentalAgreement()
+        public IBicycleRentalAgreement MakeBicycleRentalAgreement(DateTime date, DateTime time, decimal distance)
         {
-            throw new NotImplementedException();
+            return new DiscountedBicycleRentalAgreement(date, time, distance, 0.1m);
         }
 
-        public void TakeACar()
+
+        public IBicycle TakeABicycle(string name, string model, decimal timeTax, int numberOfSeats)
         {
-            throw new NotImplementedException();
+            return new ElectricBicycle(name, model, timeTax, "Electro" , numberOfSeats);
         }
     }
 }

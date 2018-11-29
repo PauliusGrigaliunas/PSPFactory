@@ -5,18 +5,30 @@ using IRentACarApiPack;
 
 namespace SimpleCarRegularCarRentalAgreementPack
 {
-    class RentSimpleCarWithRegularAgreementFactory : IRentACarFactory
+    public class RentSimpleCarWithRegularAgreementFactory : IRentACarFactory
     {
-        public void MakeCarRentalAgreement()
+        private string _carId;
+        private string _name;
+        private string _model;
+        private decimal _timeTax;
+        private string _engine;
+        private int _numberOfSeats;
+
+        public RentSimpleCarWithRegularAgreementFactory()
         {
-            throw new NotImplementedException();
+
         }
 
-        public void TakeACar()
+        public ICarRentalAgreement MakeCarRentalAgreement(DateTime date, DateTime time, Decimal distance)
         {
-            throw new NotImplementedException();
+            DateTime dateTime = new DateTime();
+            return new RegularCarRentalAgreement(DateTime.Now, dateTime.Date, distance);
         }
 
 
+        public ICar TakeACar(string name, string model, decimal timeTax, string engine, int numberOfSeats)
+        {
+            return new SimpleCar(name, model, timeTax, engine, numberOfSeats);
+        }
     }
 }

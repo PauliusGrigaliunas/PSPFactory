@@ -2,9 +2,11 @@
 
 namespace IRentACarApiPack
 {
-    public class ICarRentalAgreement
+    public abstract class ICarRentalAgreement
     {
-        public DateTime Date {get; set;}
+        public string Id { get; protected set; }
+        public DateTime DateNow { get; set; }
+        public DateTime Date { get; set; }
         public DateTime Time { get; set; }
         public decimal Distance { get; set; }
         public decimal Discount { get; set; }

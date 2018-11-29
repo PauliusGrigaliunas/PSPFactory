@@ -5,16 +5,29 @@ using IRentACarApiPack;
 
 namespace ElectricCarPack
 {
-    class RentElectricCarWithDiscountedAgreementFactory : IRentACarFactory
+    public class RentElectricCarWithDiscountedAgreementFactory : IRentACarFactory
     {
-        public void MakeCarRentalAgreement()
+        private string _carId;
+        private string _name;
+        private string _model;
+        private decimal _timeTax;
+        private string _engine;
+        private int _runningTime; 
+        private int _numberOfSeats;
+
+        public RentElectricCarWithDiscountedAgreementFactory()
+        {}
+
+        public ICarRentalAgreement MakeCarRentalAgreement(DateTime date, DateTime time, Decimal distance)
         {
-            throw new NotImplementedException();
+
+            return new DiscountedCarRentalAgreement(date, time, distance, 0.1m);
         }
 
-        public void TakeACar()
+        public ICar TakeACar(string name, string model, decimal timeTax, string engine, int numberOfSeats)
         {
-            throw new NotImplementedException();
+            return new ElectricCar(name, model, timeTax, engine, 24, numberOfSeats);
         }
+
     }
 }

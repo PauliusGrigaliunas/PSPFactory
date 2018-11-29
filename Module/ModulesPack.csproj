@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Unity" Version="5.8.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BicycleManagedControllerAPIPack\BicycleManagedControllerAPIPack.csproj" />
+    <ProjectReference Include="..\BicycleManagedControllerPack\BicycleManagedControllerPack.csproj" />
+    <ProjectReference Include="..\BicycleManagerFasadePack\BicycleManagerFasadePack.csproj" />
+    <ProjectReference Include="..\CarManagedControlerAPIPack\CarManagedControllerAPIPack.csproj" />
+    <ProjectReference Include="..\CarManagedController\CarManagedControllerPack.csproj" />
+    <ProjectReference Include="..\CarManagerFasadePack\CarManagerFasadePack.csproj" />
+    <ProjectReference Include="..\DiscounteBicycleRentalAgreementServicePack\DiscounteBicycleRentalAgreementServicePack.csproj" />
+    <ProjectReference Include="..\DiscountedCarRentalAgreementServicePack\DiscountedCarRentalAgreementServicePack.csproj" />
+    <ProjectReference Include="..\ElectricBicycleDiscountedRentalAgreementPack\ElectricBicycleDiscountedRentalAgreementPack.csproj" />
+    <ProjectReference Include="..\ElectricBicycleServicePack\ElectricBicycleServicePack.csproj" />
+    <ProjectReference Include="..\ElectricCarDiscountedRentalAgreementPack\ElectricCarDiscountedRentalAgreementPack.csproj" />
+    <ProjectReference Include="..\ElectricCarServicePack\ElectricCarServicePack.csproj" />
+    <ProjectReference Include="..\IBicycleManagerFasadePack\IBicycleManagerFasadePack.csproj" />
+    <ProjectReference Include="..\IBicycleRentServiceAPIPack\IBicycleRentServiceAPIPack.csproj" />
+    <ProjectReference Include="..\ICarManagerFasadePack\ICarManagerFasadePack.csproj" />
+    <ProjectReference Include="..\ICarRentServiceAPIPack\ICarRentServiceAPIPack.csproj" />
+    <ProjectReference Include="..\IRentABicycleApiPack\IRentABicycleApiPack.csproj" />
+    <ProjectReference Include="..\IRentABicycleFasadePack\IRentABicycleFasadePack.csproj" />
+    <ProjectReference Include="..\IRentACarApiPack\IRentACarApiPack.csproj" />
+    <ProjectReference Include="..\IRentACarFasadePack\IRentACarFasadePack.csproj" />
+    <ProjectReference Include="..\IRentControllerPack\IRentControllerPack.csproj" />
+    <ProjectReference Include="..\RegularBicycleRentalAgreementServicePack\RegularBicycleRentalAgreementServicePack.csproj" />
+    <ProjectReference Include="..\RegularCarRentalAgreementServicePack\RegularCarRentalAgreementServicePack.csproj" />
+    <ProjectReference Include="..\RentABicycleControlerPack\RentABicycleControlerPack.csproj" />
+    <ProjectReference Include="..\RentABicycleRepositoryPack\RentABicycleRepositoryPack.csproj" />
+    <ProjectReference Include="..\RentACarControlerPack\RentACarControlerPack.csproj" />
+    <ProjectReference Include="..\RentACarRepositoryPack\RentACarRepositoryPack.csproj" />
+    <ProjectReference Include="..\RentBicycleUntilDayFasadePack\RentBicycleUntilDayFasadePack.csproj" />
+    <ProjectReference Include="..\RentBicycleUntilMonthFasadePack\RentBicycleUntilMonthFasadePack.csproj" />
+    <ProjectReference Include="..\RentCarUntilDayFasadePack\RentCarUntilDayFasadePack.csproj" />
+    <ProjectReference Include="..\RentCarUntilMonthFasadePack\RentCarUntilMonthFasadePack.csproj" />
+    <ProjectReference Include="..\RepositionAPIPack\RepositionAPIPack.csproj" />
+    <ProjectReference Include="..\SimpleBicycleRegularBicycleRentalAgreementPack\SimpleBicycleRegularBicycleRentalAgreementPack.csproj" />
+    <ProjectReference Include="..\SimpleBicycleServicePack\SimpleBicycleServicePack.csproj" />
+    <ProjectReference Include="..\SimpleCarRegularCarRentalAgreementPack\SimpleCarRegularCarRentalAgreementPack.csproj" />
+    <ProjectReference Include="..\SimpleCarServicePack\SimpleCarServicePack.csproj" />
+  </ItemGroup>
+
+</Project>

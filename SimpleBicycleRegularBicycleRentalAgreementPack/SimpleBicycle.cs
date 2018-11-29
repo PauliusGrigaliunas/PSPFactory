@@ -5,7 +5,17 @@ using IRentABicycleApi;
 
 namespace SimpleBicycleRegularBicycleRentalAgreementPack
 {
-    class SimpleBicycle: IBicycle
+    public class SimpleBicycle : IBicycle
     {
+
+        public SimpleBicycle(string name, string model, decimal timeTax, int numberOfSeats)
+        {
+            Id = Guid.NewGuid().ToString();
+            Name = name;
+            Model = model;
+            TimeTax = timeTax;
+            NumberOfSeats = numberOfSeats;
+            RecoveryTimes = 0;
+        }
     }
 }
